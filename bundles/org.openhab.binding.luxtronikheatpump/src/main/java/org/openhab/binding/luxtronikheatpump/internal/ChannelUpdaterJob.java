@@ -137,7 +137,7 @@ public class ChannelUpdaterJob implements SchedulerRunnable, Runnable {
             if (unit == SIUnits.CELSIUS || unit == Units.KELVIN || unit == Units.KILOWATT_HOUR || unit == Units.PERCENT
                     || unit == Units.HOUR) {
                 return new QuantityType<>((double) rawValue / 10, unit);
-            } else if (unit == Units.HERTZ || unit == Units.SECOND) {
+            } else if (unit == Units.HERTZ || unit == Units.SECOND || unit == Units.WATT) {
                 return new QuantityType<>((double) rawValue, unit);
             } else if (unit == Units.LITRE_PER_MINUTE) {
                 return new QuantityType<>((double) rawValue / 60, unit);
