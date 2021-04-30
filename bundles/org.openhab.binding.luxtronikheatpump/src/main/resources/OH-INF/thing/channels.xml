@@ -2088,7 +2088,7 @@
 
 	<channel-type id="flowRateHeatSource2" advanced="true">
 		<item-type>Number:VolumetricFlowRate</item-type>
-		<label>Flow Rate Heat Source</label>
+		<label>Flow Rate Heat Source 2</label>
 		<state pattern="%.1f %unit%" readOnly="true"/>
 	</channel-type>
 
