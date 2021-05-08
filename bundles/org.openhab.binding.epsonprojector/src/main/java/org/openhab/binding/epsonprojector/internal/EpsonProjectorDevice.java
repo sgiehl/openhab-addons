@@ -206,6 +206,7 @@ public class EpsonProjectorDevice {
     public void disconnect() throws EpsonProjectorException {
         connection.disconnect();
         connected = false;
+        ready = true;
         ScheduledFuture<?> timeoutJob = this.timeoutJob;
         if (timeoutJob != null) {
             timeoutJob.cancel(true);
